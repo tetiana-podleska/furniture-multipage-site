@@ -39,6 +39,7 @@
     "gulp-webpcss": "^1.1.1",
     "gulp-zip": "^5.1.0",
     "sass": "^1.49.7",
+    "slick-carousel": "^1.8.1",
     "stream": "^0.0.2",
     "swiper": "^8.0.6",
     "vinyl-ftp": "^0.6.1",
