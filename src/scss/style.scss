@@ -447,14 +447,14 @@
 
     &__items-box {
         display: flex;
-        align-items: start;
+        align-items: flex-end;
         border-bottom: 2px solid rgba($color: $title, $alpha: .7);
         position: relative;
         &::before {
             content: '';
             position: absolute;
             left: 0;
-            bottom: -5px;
+            bottom: -6px;
             width: 10px;
             height: 10px;
             border-radius: 50%;
@@ -473,7 +473,6 @@
 
     &__item--production {
         margin-left: 317px;
-
         &::after {
             content: '';
             position: absolute;
@@ -485,9 +484,23 @@
         }
     }
 
-    &__works-path__item--production,
-    &__works-path__item--consultation {
-        padding-bottom: 30px;
+    &__item--production,
+    &__item--consultation {
+        padding-bottom: 38px;
+    }
+
+    &__item--measuring {
+        padding-top: 38px;
+        margin-left: 305px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 20px;
+            background: rgba($color: $title, $alpha: .7)
+        }
     }
 
     &__item-title {
