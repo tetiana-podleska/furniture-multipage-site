@@ -1,7 +1,9 @@
 import * as flsFunctions from './modules/functions.js';
-import 'slick-carousel';
+import mixitup from 'mixitup';
 
 flsFunctions.isWebp();
+
+
 
 $(function() {
     $('.header__btn').on('click', function() {
@@ -17,4 +19,11 @@ $(function() {
         fade: true,
         autoplay: true,
     });
+
+    const mixer = mixitup('.gallery__inner', {
+        load: {
+            filter: '.living'
+        }
+    });
+
 })
