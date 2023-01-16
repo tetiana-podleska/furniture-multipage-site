@@ -1,36 +1,40 @@
-import * as flsFunctions from './modules/functions.js';
-import mixitup from 'mixitup';
+import * as flsFunctions from "./modules/functions.js";
+import mixitup from "mixitup";
 
 flsFunctions.isWebp();
 
+$(function () {
+  $(".header__btn").on("click", function () {
+    $(".rightside-menu").removeClass("rightside-menu--close");
+  });
+  $(".rightside-menu__close").on("click", function () {
+    $(".rightside-menu").addClass("rightside-menu--close");
+  });
 
+  $(".top__slider").slick({
+    dots: true,
+    arrows: false,
+    fade: true,
+    autoplay: true,
+  });
 
-$(function() {
-    $('.header__btn').on('click', function() {
-        $('.rightside-menu').removeClass('rightside-menu--close');
-    })
-    $('.rightside-menu__close').on('click', function() {
-        $('.rightside-menu').addClass('rightside-menu--close');
-    })
+  $(".contact-slider").slick({
+    slidesToShow: 10,
+    slidesToScroll: 10,
+    dots: true,
+    arrows: false,
+  });
 
-    $('.top__slider').slick({
-        dots: true,
-        arrows: false,
-        fade: true,
-        autoplay: true,
-    });
+  $(".article-slider__box").slick({
+    prevArrow:
+      '<button type="button" class="article-slider__arrow article-slider__arrowleft"><img src="img/arrow-slide-left.svg" alt="arrow left" /></button>',
+    nextArrow:
+      '<button type="button" class="article-slider__arrow article-slider__arrowright"><img src="img/arrow-slide-right.svg" alt="arrow right" /></button>',
+  });
 
-    $('.contact-slider').slick({
-        slidesToShow: 10,
-        slidesToScroll: 10,
-        dots: true,
-        arrows: false,
-    });
-
-    const mixer = mixitup('.gallery__inner', {
-        load: {
-            filter: '.living'
-        }
-    });
-
-})
+  const mixer = mixitup(".gallery__inner", {
+    load: {
+      filter: ".living",
+    },
+  });
+});

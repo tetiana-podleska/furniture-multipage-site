@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap"
     rel="stylesheet"
   />
 </head>
@@ -140,6 +140,7 @@
                   />
                   <a
                     class="blog__item-popup"
+                    data-fancybox
                     href="https://youtu.be/Nxg6UfofZX0"
                   >
                     <img
@@ -193,7 +194,14 @@
                 </p>
               </div>
               <div class="pagination">
-                <div class="pagination__arrow"></div>
+                <a class="pagination__arrow" href="#">
+                  <img
+                    class="pagination__arrow-icon"
+                    src="img/arrow-left.svg"
+                    alt="arrow icon"
+                  />
+                </a>
+
                 <ul class="pagination__list">
                   <li class="pagination__list-item">
                     <a
@@ -206,7 +214,14 @@
                     <a class="pagination__list-num" href="#">2</a>
                   </li>
                 </ul>
-                <div class="pagination__arrow"></div>
+
+                <a class="pagination__arrow" href="#">
+                  <img
+                    class="pagination__arrow-icon"
+                    src="img/arrow-right.svg"
+                    alt="arrow icon"
+                  />
+                </a>
               </div>
             </div>
 
