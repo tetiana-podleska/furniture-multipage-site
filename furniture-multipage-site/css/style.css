@@ -1388,9 +1388,12 @@ body {
 @media (max-width: 540px) {
   .logo {
     order: -1;
+    position: relative;
+    z-index: 12;
   }
   .header__inner {
     flex-wrap: wrap;
+    padding-top: 42px;
   }
   .header__btn-menu {
     display: block;
@@ -1398,6 +1401,8 @@ body {
     border: none;
     cursor: pointer;
     order: -1;
+    position: relative;
+    z-index: 12;
   }
   .header__btn-menu span {
     display: block;
@@ -1409,13 +1414,25 @@ body {
   }
   .menu {
     padding-right: 0;
-    padding: 50px 0;
     width: 100%;
     background-color: #fff;
     position: relative;
     z-index: 11;
+    text-align: center;
+    transform: translateY(-350px);
+    transition: all 0.5s;
+  }
+  .menu--open {
+    transform: translateY(30px);
   }
   .menu__list {
     display: block;
+  }
+  .menu__list-item {
+    padding-right: 0;
+  }
+  .menu__list-link {
+    display: block;
+    padding: 15px 0;
   }
 }

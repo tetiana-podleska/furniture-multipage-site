@@ -20,10 +20,13 @@
 @media (max-width: 540px) {
   .logo {
     order: -1;
+    position: relative;
+    z-index: 12;
   }
   .header {
     &__inner {
       flex-wrap: wrap;
+      padding-top: 42px;
     }
     &__btn-menu {
       display: block;
@@ -31,6 +34,8 @@
       border: none;
       cursor: pointer;
       order: -1;
+      position: relative;
+      z-index: 12;
       span {
         display: block;
         margin: 6px 0;
@@ -43,13 +48,26 @@
   }
   .menu {
     padding-right: 0;
-    padding: 50px 0;
+
     width: 100%;
     background-color: #fff;
     position: relative;
     z-index: 11;
+    text-align: center;
+    transform: translateY(-350px);
+    transition: all 0.5s;
+    &--open {
+      transform: translateY(30px);
+    }
     &__list {
       display: block;
+    }
+    &__list-item {
+      padding-right: 0;
+    }
+    &__list-link {
+      display: block;
+      padding: 15px 0;
     }
   }
 }
