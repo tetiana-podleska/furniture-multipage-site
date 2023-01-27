@@ -3,6 +3,12 @@
   font-weight: 700;
 }
 
+@media (max-width: 540px) {
+  .blog-one__form-title, .blog-one__comments-name, .blog-one__comments-title, .blog-one__tags-title, .resent-posts__title, .blog__blockqoute-author, .blog__item-title, .blog__category-title, .blog__tags-title, .contact-slider__title, .contact__title, .inspiration__item, .inspiration__title, .about__title, .about__prev-title, .blog-box__item-title, .blog-box__title, .works-path__item-title, .works-path__title, .decor__title, .collection__info-title, .new-collection__title, .top__slider-title, .rightside-menu__title, .footer__info-title, .menu__list-link {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
 @font-face {
   font-family: Abel;
   font-display: swap;
@@ -1375,15 +1381,54 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 1366px) {
+  .collection {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .collection__images {
+    width: 100%;
+  }
+}
 @media (max-width: 1200px) {
   .top__slider-title {
     font-size: 62px;
     line-height: 74px;
   }
+  .top__slider-img {
+    height: 640px;
+  }
 }
 @media (max-width: 992px) {
   .footer__info {
     width: 380px;
+  }
+  .gallery__items {
+    grid-gap: 10px;
+  }
+  .gallery__btn {
+    margin: 0;
+    padding: 6px 10px;
+  }
+}
+@media (max-width: 840px) {
+  .top__inner::after {
+    height: 100%;
+  }
+  .top__slider-title {
+    font-size: 54px;
+    line-height: 44px;
+  }
+  .top__slider-img {
+    height: 540px;
+  }
+  .collection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .works-path__item {
+    width: 350px;
+  }
+  .works-path__item--production {
+    margin-left: 50px;
   }
 }
 @media (max-width: 768px) {
@@ -1417,6 +1462,64 @@ body {
   .footer__social {
     margin-right: auto;
     margin-left: auto;
+  }
+  .decor {
+    padding: 70px 0 55px;
+  }
+  .works-path__item--measuring {
+    margin-left: 100px;
+  }
+  .gallery__buttons {
+    display: grid;
+  }
+  .gallery__btn {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 650px) {
+  .top__inner {
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+  .top__slider-item .top__slider-img {
+    display: none;
+  }
+  .top__slider-text {
+    margin-bottom: 15px;
+  }
+  .decor__text {
+    min-width: 500px;
+  }
+  .works-path__item {
+    width: 100%;
+  }
+  .works-path__items-box {
+    border: none;
+    flex-wrap: wrap;
+  }
+  .works-path__items-box::before, .works-path__item--production::after, .works-path__item--measuring::before {
+    display: none;
+  }
+  .works-path__item--measuring {
+    margin-left: 0;
+    padding-top: 0;
+  }
+  .works-path__item--production {
+    margin-left: 0;
+    padding-top: 38px;
+    order: 1;
+  }
+  .blog-box__items {
+    display: block;
+  }
+  .blog-box__img-link {
+    display: block;
+  }
+  .blog-box__img {
+    width: 100%;
+  }
+  .blog-box__item {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 540px) {
@@ -1468,6 +1571,31 @@ body {
   .menu__list-link {
     display: block;
     padding: 15px 0;
+  }
+  .collection {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .decor__text {
+    min-width: 310px;
+  }
+  .menu__list-link, .footer__info-title, .rightside-menu__title, .top__slider-title, .new-collection__title, .collection__info-title, .decor__title, .works-path__title, .works-path__item-title, .blog-box__title, .blog-box__item-title, .about__prev-title, .about__title, .inspiration__title, .inspiration__item, .contact__title, .contact-slider__title, .blog__category-title, .blog__tags-title, .blog__item-title, .blog__blockqoute-author, .resent-posts__title, .blog-one__tags-title, .blog-one__comments-title, .blog-one__comments-name, .blog-one__form-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .blog-box__item-title {
+    font-size: 22px;
+    line-height: 36px;
+  }
+  .works-path__item-title {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .gallery__items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .gallery__item:first-child {
+    grid-column: 1;
+    grid-row: 1;
   }
 }
 @media (max-width: 375px) {
