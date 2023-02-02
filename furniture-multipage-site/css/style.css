@@ -1,10 +1,10 @@
-.blog-one__form-title, .blog-one__comments-name, .blog-one__comments-title, .blog-one__tags-title, .resent-posts__title, .blog__blockqoute-author, .blog__item-title, .blog__category-title, .blog__tags-title, .contact-slider__title, .contact__title, .inspiration__item, .inspiration__title, .about__title, .about__prev-title, .blog-box__item-title, .blog-box__title, .works-path__item-title, .works-path__title, .decor__title, .collection__info-title, .new-collection__title, .top__slider-title, .rightside-menu__title, .footer__info-title, .menu__list-link {
+.blog-one__form-title, .blog-one__comments-name, .blog-one__comments-title, .blog-one__tags-title, .recent-posts__title, .blog__blockqoute-author, .blog__item-title, .blog__category-title, .blog__tags-title, .contact-slider__title, .contact__title, .inspiration__item, .inspiration__title, .about__title, .about__prev-title, .blog-box__item-title, .blog-box__title, .works-path__item-title, .works-path__title, .decor__title, .collection__info-title, .new-collection__title, .top__slider-title, .rightside-menu__title, .footer__info-title, .menu__list-link {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
 @media (max-width: 540px) {
-  .blog-one__form-title, .blog-one__comments-name, .blog-one__comments-title, .blog-one__tags-title, .resent-posts__title, .blog__blockqoute-author, .blog__item-title, .blog__category-title, .blog__tags-title, .contact-slider__title, .contact__title, .inspiration__item, .inspiration__title, .about__title, .about__prev-title, .blog-box__item-title, .blog-box__title, .works-path__item-title, .works-path__title, .decor__title, .collection__info-title, .new-collection__title, .top__slider-title, .rightside-menu__title, .footer__info-title, .menu__list-link {
+  .blog-one__form-title, .blog-one__comments-name, .blog-one__comments-title, .blog-one__tags-title, .recent-posts__title, .blog__blockqoute-author, .blog__item-title, .blog__category-title, .blog__tags-title, .contact-slider__title, .contact__title, .inspiration__item, .inspiration__title, .about__title, .about__prev-title, .blog-box__item-title, .blog-box__title, .works-path__item-title, .works-path__title, .decor__title, .collection__info-title, .new-collection__title, .top__slider-title, .rightside-menu__title, .footer__info-title, .menu__list-link {
     font-size: 28px;
     line-height: 36px;
   }
@@ -1137,21 +1137,21 @@ body {
   right: 16px;
 }
 
-.resent-posts {
+.recent-posts {
   margin-bottom: 40px;
 }
-.resent-posts__title {
+.recent-posts__title {
   margin-bottom: 24px;
   color: #363838;
 }
-.resent-posts__item {
+.recent-posts__item {
   margin-bottom: 11px;
 }
-.resent-posts__item-title {
+.recent-posts__item-title {
   display: block;
   color: inherit;
 }
-.resent-posts__date, .resent-posts__author {
+.recent-posts__date, .recent-posts__author {
   font-size: 14px;
   color: #a1a1a1;
 }
@@ -1640,13 +1640,27 @@ body {
   .decor__text {
     min-width: 310px;
   }
-  .menu__list-link, .footer__info-title, .rightside-menu__title, .top__slider-title, .new-collection__title, .collection__info-title, .decor__title, .works-path__title, .works-path__item-title, .blog-box__title, .blog-box__item-title, .about__prev-title, .about__title, .inspiration__title, .inspiration__item, .contact__title, .contact-slider__title, .blog__category-title, .blog__tags-title, .blog__item-title, .blog__blockqoute-author, .resent-posts__title, .blog-one__tags-title, .blog-one__comments-title, .blog-one__comments-name, .blog-one__form-title {
+  .menu__list-link, .footer__info-title, .rightside-menu__title, .top__slider-title, .new-collection__title, .collection__info-title, .decor__title, .works-path__title, .works-path__item-title, .blog-box__title, .blog-box__item-title, .about__prev-title, .about__title, .inspiration__title, .inspiration__item, .contact__title, .contact-slider__title, .blog__category-title, .blog__tags-title, .blog__item-title, .blog__blockqoute-author, .recent-posts__title, .blog-one__tags-title, .blog-one__comments-title, .blog-one__comments-name, .blog-one__form-title {
     font-size: 28px;
     line-height: 36px;
   }
   .blog-box__item-title {
     font-size: 22px;
     line-height: 36px;
+  }
+  .blog__category-title,
+  .recent-posts__title,
+  .blog__tags-title,
+  .blog__blockqoute-author {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .blog__item-title {
+    font-size: 24px;
+    line-height: 38px;
+  }
+  .blog-one__link span {
+    display: none;
   }
   .works-path__item-title {
     font-size: 16px;
@@ -1689,5 +1703,14 @@ body {
     width: 100%;
     margin-left: 0;
     margin-top: 10px;
+  }
+  .contact-slider {
+    height: 310px;
+  }
+  .slick-dots li {
+    margin: 0 1px;
+  }
+  .blog-one__item blockquote {
+    padding: 0 20px;
   }
 }
