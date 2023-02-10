@@ -195,15 +195,13 @@
   right: 0;
   bottom: 0;
   z-index: 15;
+  height: 100vw;
   width: 100%;
   max-width: 694px;
   background-color: #fff;
   padding-top: 40px;
   box-shadow: -2px 3px 17px 0 #000;
   transition: all 0.6s;
-  &.rightside-menu--close {
-    transform: translateX(500%);
-  }
 
   &__close {
     background-color: transparent;
@@ -212,6 +210,10 @@
     margin-left: 50px;
     margin-bottom: 60px;
     cursor: pointer;
+  }
+
+  &.rightside-menu--close {
+    transform: translateX(500%);
   }
 
   &__content {
@@ -228,7 +230,7 @@
   &__title {
     color: $title;
     @extend %title-font;
-    font-style: 36px;
+    font-size: 36px;
     line-height: 51px;
     position: relative;
     margin-bottom: 17px;

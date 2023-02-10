@@ -364,15 +364,13 @@ body {
   right: 0;
   bottom: 0;
   z-index: 15;
+  height: 100vw;
   width: 100%;
   max-width: 694px;
   background-color: #fff;
   padding-top: 40px;
   box-shadow: -2px 3px 17px 0 #000;
   transition: all 0.6s;
-}
-.rightside-menu.rightside-menu--close {
-  transform: translateX(500%);
 }
 .rightside-menu__close {
   background-color: transparent;
@@ -381,6 +379,9 @@ body {
   margin-left: 50px;
   margin-bottom: 60px;
   cursor: pointer;
+}
+.rightside-menu.rightside-menu--close {
+  transform: translateX(500%);
 }
 .rightside-menu__content {
   text-align: center;
@@ -393,7 +394,7 @@ body {
 }
 .rightside-menu__title {
   color: #363838;
-  font-style: 36px;
+  font-size: 36px;
   line-height: 51px;
   position: relative;
   margin-bottom: 17px;
